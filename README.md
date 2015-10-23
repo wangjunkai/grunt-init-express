@@ -2,6 +2,7 @@
 ## grunt init 初始化express脚手架
 
 > Create a express plugin with [grunt-init][], including QUnit unit tests.
+> 前后端分离（angularjs＋express mongodb）
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 

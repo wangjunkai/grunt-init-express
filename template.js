@@ -42,7 +42,7 @@ exports.template = function(grunt, init, done) {
 
     props.keywords = [];
     props.script = {
-      "start": "node www"
+      "start": "node www.js"
     };
     // Files to copy (and process).
     var files = init.filesToCopy(props);
@@ -67,13 +67,16 @@ exports.template = function(grunt, init, done) {
         'grunt-contrib-uglify': '~0.2.0',
         'grunt-contrib-watch': '~0.4.0',
         'grunt-contrib-clean': '~0.4.0',
+        "mongoose": "~3.8.8",
         'body-parser': '~1.13.2',
         'cookie-parser': '~1.3.5',
         'debug': '~2.2.0',
         'express': '~4.13.1',
         'jade': '~1.11.0',
         'morgan': '~1.6.1',
-        'serve-favicon': '~2.3.0'
+        'serve-favicon': '~2.3.0',
+        "chalk": "~0.5"
+
       },
     });
 

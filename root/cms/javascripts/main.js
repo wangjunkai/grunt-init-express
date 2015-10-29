@@ -1,14 +1,13 @@
 'use strict';
 
 
-require(['jquery', 'angular', 'moduleConfig', 'routeConfig','controller'], function ($, $$, mc, rc,cc) {
+require(['jquery', 'angular', 'routeConfig','controllerConfig'], function ($, $$, rc,cc) {
     $$.element(document).ready(function () {
-        var module = mc();
-        var route = rc(module);
+
+        //初始化angular
+        var module = rc();
         var controller = c(module);
-    });
 
-    $(document).on('isready',function(){
-
+        //页面dom操作
     });
 });

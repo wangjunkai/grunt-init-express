@@ -18,6 +18,8 @@ var app = express();
 
 //设置静态HTML文件的位置
 app.use(express.static(path.resolve('./app/views')));
+app.use(express.static('public'));
+app.use(express.static('cms'));
 
 //连接数据库
 //uri = 'mongodb://user:pass@localhost:port/database,mongodb://anotherhost:port,mongodb://yetanother:port';
@@ -147,5 +149,5 @@ function onListening() {
     var bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    debug('连接成功,访问 http://localhost: ' + bind);
+    console.log('连接成功,访问 http://localhost: ' + bind);
 }

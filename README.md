@@ -31,3 +31,6 @@ npm install
 bower install
 ```
 install plugin
+
+```
+node app/controller/config/www.js 运行程序

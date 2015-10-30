@@ -1,30 +1,36 @@
-# {%= title || name %}
+# grunt-init-express
+## grunt init 初始化express脚手架
 
-{%= description %}
+> Create a express plugin with [grunt-init][], including QUnit unit tests.
+> 前后端分离（angularjs＋express mongodb）
 
-## Getting Started
-Download the [production version][min] or the [development version][max].
+[grunt-init]: http://gruntjs.com/project-scaffolding
 
-[min]: https://raw.github.com/{%= git_user %}/{%= git_repo %}/master/dist/{%= name %}.min.js
-[max]: https://raw.github.com/{%= git_user %}/{%= git_repo %}/master/dist/{%= name %}.js
+## Installation
+If you haven't already done so, install [grunt-init][].
 
-In your web page:
+Once grunt-init is installed, place this template in your `~/.grunt-init/` directory. It's recommended that you use git to clone this template into that directory, as follows:
 
-```html
-<script src="jquery.js"></script>
-<script src="dist/{%= name %}.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
+```
+git clone https://github.com/wangjunkai/grunt-init-express.git ~/.grunt-init/express
 ```
 
-## Documentation
-_(Coming soon)_
+_(Windows users, see [the documentation][grunt-init] for the correct destination directory path)_
 
-## Examples
-_(Coming soon)_
+## Usage
 
-## Release History
-_(Nothing yet)_
+At the command-line, cd into an empty directory, run this command and follow the prompts.
+
+```
+grunt-init express
+```
+```
+npm install
+```
+```
+bower install
+```
+install plugin
+
+```
+node app/controller/config/www.js 运行程序
